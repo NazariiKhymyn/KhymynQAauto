@@ -2,13 +2,13 @@ import pytest
 import requests
 
 
-pytest.mark.http
+@pytest.mark.http
 def test_first_request():
-    r = requests.get('https://api.github.com/zen')
+    r = requests.get("https://api.github.com/zen")
     print(f"Response is {r.text}")
 
-pytest.mark.http
+
+@pytest.mark.http
 def test_second_request():
-    r = requests.get('https://api.github.com/users/defunkt')
+    r = requests.get("https://api.github.com/users/defunkt")
     print(f"Response is {r.text}")
-    
