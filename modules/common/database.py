@@ -4,7 +4,7 @@ import sqlite3
 class Database:
     def __init__(self) -> None:
         self.connection = sqlite3.connect(
-            r"C:\\Users\\Користувач\\KhymynQAauto" + r"\\become_qa_auto.db"
+            r"C:\\Users\\Fikeee\\KhymynQAauto" + r"\\become_qa_auto.db"
         )
         self.cursor = self.connection.cursor()
 
@@ -89,7 +89,7 @@ class Database:
                 VALUES ({id}, '{name}', '{address}', '{city}', {postalCode}, '{country}')"
         self.cursor.execute(query)
         self.connection.commit()
-        
+
     def delete_customer_by_id(self, id):
         query = f"DELETE FROM customers WHERE id = {id}"
         self.cursor.execute(query)

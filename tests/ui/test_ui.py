@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 def test_check_incorrect_username():
     # creating an object to control the browser
     driver = webdriver.Chrome(
-        service=Service(r"C:\\Users\\Користувач\\KhymynQAauto" + r"\\chromedriver.exe")
+        service=Service(r"C:\\Users\\Fikeee\\KhymynQAauto\\" + r"\\chromedriver.exe")
     )
 
     # open the page https://github.com/login
