@@ -37,4 +37,4 @@ def test_checking_selected_movies():
 
     sing_in_page_megogo.go_to()
 
-    sing_in_page_megogo.open_selected_movies()
+    sing_in_page_megogo.go_button_all()

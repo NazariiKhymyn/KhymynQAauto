@@ -23,7 +23,22 @@ class SignInPageMegogo(BasePageMegogo):
         )
         find_elm_tv_channels.click()
 
-    def open_selected_movies(self):
-        open_elem_I_see = self.driver.find_element(By.LINK_TEXT, "Я дивлюся")
+    def go_button_all(self):
+        open_elem_first = self.driver.find_element(
+            By.XPATH, "//div[2]/div/div/div[2]/nav/ul/li[1]"
+        )
 
-        open_elem_I_see.click()
+        open_elem_second = self.driver.find_element(
+            By.XPATH, "//div[2]/div/div/div[2]/nav/ul/li[2]"
+        )
+
+        open_elem_third = self.driver.find_element(
+            By.XPATH, "//div[2]/div/div/div[2]/nav/ul/li[3]"
+        )
+
+        open_elem_fourth = self.driver.find_element(
+            By.XPATH, "//div[2]/div/div/div[2]/nav/ul/li[4]"
+        )
+        open_elem_fifth = self.driver.find_element(
+            By.XPATH, "//div[2]/div/div/div[2]/nav/ul/li[5]"
+        )
